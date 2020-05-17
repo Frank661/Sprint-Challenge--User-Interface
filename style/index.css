@@ -47,12 +47,12 @@ table {
 	border-spacing: 0;
 }
 
-* {
+/* * {
     box-sizing: border-box;
-}
-/* html {
-    font-size: 62.5%;
 } */
+html {
+    font-size: 62.5%;
+}
 header {
 
    display: flex;
@@ -60,7 +60,7 @@ header {
    margin: 4% 0;
    margin-bottom: 6%;
 }
-img.logo{
+img.lambdalogo{
     width: 30%;
 }
 header nav{
@@ -271,25 +271,116 @@ footer nav a {
     text-decoration: none;
 }
 
-@media(max-width: 800px){
-    img {
-        width: 100%;
-    }
-    body .container {
-        width: 75%;
-        display: column;
-        border: 10px solid red;
+@media(max-width: 500px) {
+     body{
 
+       max-width:100%;
+    }
+
+    .container{
+
+        width:100%;
+
+        
     } 
-    .container .boxes {
-        column-count: 1;
-       
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 4%;
     }
-}
 
-@media(max-width: 500px){
-    .container .top-content .text-container {
-        display: column;
-        justify-items: center;
+    nav a{
+        font-size:1.6rem;
     }
+    .jumbo{
+        padding-bottom: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 85px;
+    }
+
+        .top-content {
+           flex-direction: column;
+            width: 100%;
+            align-content: left;
+    } 
+    .future {
+        width: 190%;
+
+    }
+    .past {
+        width: 190%;
+    }
+
+      .boxes {
+          max-width: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        /* padding-left: 10%; */
+
+     }
+     .box1 {
+         width:35%;
+     }
+     .box2 {
+        width:35%;
+     }
+     .box3 {
+        width:35%;
+     }
+     .box4 {
+        width:35%;
+     }
+     .box5 {
+        width:35%;
+     }
+     .box6 {
+        width:35%;
+     }
+     .box7 {
+        width:35%;
+     }
+     .box8 {
+        width:35%;
+     }
+     .box9 {
+        width:35%;
+     }
+     .box10 {
+        width:35%;
+     }
+    
+
+   
+
+    .bottom-content{
+        display:flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+
+
+    }
+
+    .bottom-content .text-container p{
+
+        font-size: 1.4rem;
+
+
+    }
+    footer nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 50%;
+    }
+
+
+
 }
