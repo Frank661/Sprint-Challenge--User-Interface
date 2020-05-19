@@ -73,6 +73,9 @@ header nav a{
     color: black;
     margin-top: 5%;
 }
+nav a:hover {
+    font-size: 1.6rem;
+}
 nav a:hover{
     color: darkgray;
     cursor: pointer;
@@ -104,6 +107,12 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+.future:hover {
+    font-size: 1.6rem;
+}
+.past:hover {
+    font-size: 1.6rem;
 }
 
 .top-content .text-container {
@@ -251,6 +260,10 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+.thatno {
+    display: flex;
+    
+}
 
 footer {
     width: 100%;
@@ -270,6 +283,83 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+ 
+ @media(max-width: 800px) { 
+
+     body{
+
+        max-width:100%;
+     }
+ 
+     .container{
+ 
+         width:100%;
+ 
+         
+     } 
+     header nav {
+         font-size: 1.6rem;
+     }
+
+     .top-content {
+        flex-direction: column;
+         width: 100%;
+         align-content: left;
+ } 
+ .jumbo {
+     width: 100%;
+ }
+ .future {
+     width: 190%;
+
+ }
+ .past {
+     width: 190%;
+ }
+      
+ .box1 {
+    width:30%;
+}
+.box2 {
+   width:30%;
+}
+.box3 {
+   width:30%;
+}
+.box4 {
+   width:30%;
+}
+.box5 {
+   width:30%;
+}
+.box6 {
+   width:30%;
+}
+.box7 {
+   width:30%;
+}
+.box8 {
+   width:30%;
+}
+.box9 {
+   width:30%;
+}
+.box10 {
+   width:30%;
+}
+   .thatno {
+       display: inline-block;
+       align-content: right;
+       justify-content: space-around;
+   }
+   .moon {
+       display: flex;
+       flex-direction: column;
+       column-count: 1;
+   }
+
+}  
+
 
 @media(max-width: 500px) {
      body{
@@ -321,6 +411,7 @@ footer nav a {
         flex-direction: column;
         width: 100%;
         align-content: center;
+        column-count: 1;
         /* padding-left: 10%; */
 
      }
@@ -384,3 +475,4 @@ footer nav a {
 
 
 }
+
